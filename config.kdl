@@ -3,7 +3,7 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
-        unbind "Ctrl b"
+        // unbind "Ctrl b"
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -124,7 +124,7 @@ keybinds {
     }
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl a" { Write 2; SwitchToMode "Normal"; }
+        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
         bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "|" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
@@ -182,7 +182,7 @@ keybinds {
         bind "Ctrl h" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
-        bind "Ctrl a" { SwitchToMode "Tmux"; }
+        bind "Ctrl b" { SwitchToMode "Tmux"; }
     }
 }
 
